@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mi pagina web</title>
+    <style>
+        body {
+            background-image: url("imagen-fondo .jpeg"); /* Cambia esto por la ruta de tu imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+            background-color: black; /* Color de respaldo si la imagen no carga */
+            height: 100vh;
+        }
+        .header {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 10;
+        }
+        .header img {
+            width: 70px; /* Logo más pequeño */
+            height: auto;
+        }
+        .menu {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: row; /* Cambia a horizontal */
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 10px;
+            gap: 10px; /* Espaciado entre botones */
+        }
+        .menu button {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 8px;
+            cursor: pointer;
+            font-size: 14px; /* Tamaño de letra más pequeño */
+            width: 120px; /* Tamaño reducido */
+        }
+        .menu button:hover {
+            background: white;
+            color: black;
+        }
+        .perfil {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; /* Cambiado para que el texto esté a la izquierda */
+            padding: 80px 50px; /* Añadido más espacio superior */
+            background: rgba(0, 0, 0, 0.7);
+            width: 80%;
+            margin: 50px auto;
+            border-radius: 15px;
+            position: relative;
+            top: 15%; /* Centrado un poco más hacia abajo */
+        }
+        .perfil img {
+            width: 150px; /* Tamaño cuadrado */
+            height: 150px; /* Tamaño cuadrado */
+            object-fit: contain; /* Ajusta la imagen sin recortar */
+            margin-left: 20px;
+        }
+        .perfil .info {
+            font-size: 18px;
+            margin-right: 20px; /* Espaciado entre la imagen y el texto */
+        }
+        .footer {
+            position: fixed;
+            bottom: 10px;
+            right: 20px;
+            font-size: 14px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo -->
+    <div class="header">
+        <img src="C:\Users\HP\Downloads\mipaginaweb\descarga.jpg"> <!-- Cambia esto por la ruta de tu logo -->
+    </div>
+
+    <div class="menu">
+        <button onclick="alert('Ir a Inicio')">Inicio</button>
+        <button onclick="alert('Ir a Quién Soy')">Quién Soy</button>
+        <button onclick="alert('Ir a Portafolio')">Portafolio</button>
+        <button onclick="alert('Ir a Blog')">Blog</button>
+        <button onclick="alert('Ir a Contactos')">Contactos</button>
+    </div>
+    
+    <div class="perfil">
+        <div class="info">
+            <p><strong>Kelli Anahi Felipe Jacinto</strong></p>
+            <p>Estudiante de Ingeniería en Software</p>
+        </div>
+        <img src="C:\Users\HP\Downloads\WhatsApp Image 2025-02-17 at 9.16.31 PM.jpeg" alt="Foto de Kelli Anahi Felipe Jacinto">
+    </div>
+    
+    <div class="footer">
+        <p>Universidad Politécnica de Chiapas</p>
+        <p>Derechos reservados, Kelli Anahi Felipe Jacinto</p>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
